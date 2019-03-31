@@ -10,5 +10,6 @@ app.set('view engine', 'pug');
 app.use('/static', express.static('resources'))
 
 app.get('/nine-to-noon', (req, res) => res.render('nine-to-noon'));
+app.get('/wooten-stock-picks', (req, res) => res.render('wooten-stock-picks'));
 
 app.listen(port, () => console.log(`Started server on port ${port}`));

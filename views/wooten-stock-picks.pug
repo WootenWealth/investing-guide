@@ -1,0 +1,144 @@
+doctype html
+
+include comment.pug
+
+html(lang='en')
+  head
+    meta(charset='utf-8')/
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')/
+    meta(name='description' content='Wooten Stock Picks')/
+    meta(name='author' content='CJ Burkey')/
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous')/
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900')/
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i')/
+    link(rel='stylesheet' href='/static/wooten-stock-picks/style/stylea.css')/
+    link(rel='stylesheet' href='/static/wooten-stock-picks/style/styleb.css')/
+    title Wooten Stock Picks
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.navbar-custom.fixed-top
+      .container
+        a.navbar-brand(href='#') Wooten Stock Picks
+    header.masthead.text-center.text-white
+      .masthead-content
+        .container
+          h1.masthead-heading.mb-0 Wooten Stock Picks
+          h2.masthead-subheading.mb-0 Outperforming Market Returns
+          a.btn.btn-primary.btn-xl.mt-5(href='#get-started') Get Picks Now!
+    section
+      .container
+        .row.align-items-center
+          .col-lg-6.order-lg-2
+            .p-5
+              h3 Free Gift!
+              p.mb-2 Get my 12 stock classes sent to your inbox right away!
+              form(action='#' method='post')
+                .form-group
+                  label(for='namea') Full name
+                  input#namea.form-control(type='text' name='name' placeholder='Enter name')/
+                .form-group
+                  label(for='emaila') Email address
+                  input#emaila.form-control(type='email' name='email' placeholder='Enter email')/
+                  small#emailHelpa.form-text.text-muted (We don&apos;t share your email)
+                .form-group
+                  input.btn.btn-primary.btn-block(type='submit' value='Learn more!')/
+          .col-lg-6.order-lg-1
+            .p-5
+              h2.display-4 Text1
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
+    section
+      .container
+        .row.align-items-center
+          .col-lg-6
+            .p-5
+              img.img-fluid(src='https://via.placeholder.com/1024?text=Business+photo+1' alt='Sweet business photo')/
+          .col-lg-6
+            .p-5
+              h2.display-4 Text2
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
+    section
+      .container
+        .row.align-items-center
+          .col-lg-6.order-lg-2
+            .p-5
+              img.img-fluid(src='https://via.placeholder.com/1024?text=Photo+2' alt='Another sweet business photo')/
+          .col-lg-6.order-lg-1
+            .p-5
+              h2.display-4 Text3
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
+    section
+      .container
+        .row.align-items-center
+          .col-lg-6
+            .p-5
+              img.img-fluid(src='https://via.placeholder.com/1024?text=Chart' alt='A coolio chart')/
+          .col-lg-6
+            .p-5
+              h2.display-4 Bio
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
+    section#get-started
+      .container
+        .row.align-items-center
+          .col-12
+            .p-5.text-center
+              h2.display-4 Get Started
+              p Sign up for Wooten Stock Picks today for only $99/year!
+              p Picks are sent via email, so please purchase your subscription using an email you check regularly! Both the USD and cryptocurrency via Coinbase are accepted forms of payment!
+              .mb-3
+                a.buy-with-crypto(href='https://commerce.coinbase.com/checkout/9409b9d9-ce58-43ba-8cdd-bed162f0cb0c')
+                  span Buy with Crypto
+                script(src='https://commerce.coinbase.com/v1/checkout.js?version=201807')
+              div.mb-3(data-ap-widget-type='expressPaymentButton'
+                data-ap-signature='LGA05%2FISUaBfcqc1IIfOBufqpUg7d4KvJbJzp3Nc61w%3D'
+                data-ap-seller-id='A18MPX486LE3VA'
+                data-ap-access-key='AKIAIWARZWSX43LLPNBQ'
+                data-ap-lwa-client-id='amzn1.application-oa2-client.0d4296fe12934dc7b3f487454b6a38c3'
+                data-ap-return-url='https://monerads.com'
+                data-ap-currency-code='USD'
+                data-ap-amount='99'
+                data-ap-note=''
+                data-ap-shipping-address-required='false'
+                data-ap-payment-action='AuthorizeAndCapture')
+              form(action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top')
+                input(type='hidden' name='cmd' value='_s-xclick')/
+                input(type='hidden' name='hosted_button_id' value='5YD249F6T58PE')/
+                input(type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif' name='submit' alt='PayPal - The safer, easier way to pay online!')/
+                img(alt='' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' height='1')/
+    section
+      .container
+        .row.align-items-center
+          .col-lg-6.order-lg-2
+            .p-5
+              img.img-fluid(src='https://via.placeholder.com/1024?text=Photo+2' alt='Another sweet business photo')/
+          .col-lg-6.order-lg-1
+            .p-5
+              h2.display-4 Past Picks
+              p I can&apos;t wait to work with you! Please enter your email address below for a report of my past picks. Note that most of these picks are long-term picks, but I often make technical sell calls. This list is updated monthly on the 28#[sup th] with picks that are at least two months old. For live picks sent directly to your inbox, #[a.font-weight-bold(href='#get-started') subscribe to Wooten Stock Picks] above.
+              form(action='#' method='post')
+                .form-group
+                  label(for='nameb') Full name
+                  input#nameb.form-control(type='text' name='name' placeholder='Enter name')/
+                .form-group
+                  label(for='emailb') Email address
+                  input#emailb.form-control(type='email' name='email' placeholder='Enter email')/
+                  small#emailHelpb.form-text text-muted (We don&apos;t share your email)
+                .form-group
+                  input.btn.btn-primary.btn-block(type='submit' value='Get Previous Picks')/
+    section
+      .container
+        .row.align-items-center
+          .col-12
+            .p-5.text-center
+              h2.display-4 Happy Trading!
+              p
+                img(alt='John Wooten&apos;s Signature' src='/static/wooten-stock-picks/img/sig.png')/
+    .py-5.bg-black
+      .container
+        p.m-0.text-center.text-white.small &copy; #{(new Date()).getFullYear()} Wooten Stock Picks
+        p.m-0.text-center.text-white.small
+          a.footer-link(href='#') Terms &amp; Conditions
+        p.m-0.text-center.text-white.small #[a.footer-link(href='#') Privacy Policy] &verbar; #[a.footer-link(href='#') Contact Me]
+
+    script(src='/static/js/jquery-3.3.1.slim.min.js')
+    script(src='/static/js/popper.min.js')
+    script(src='/static/js/bootstrap.min.js')
+    script(async src='https://static-na.payments-amazon.com/OffAmazonPayments/us/js/Widgets.js')

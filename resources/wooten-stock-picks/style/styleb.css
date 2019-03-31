@@ -1,0 +1,28 @@
+.masthead {
+	background: linear-gradient(0deg,#aa0000 0,#ee6a09 100%) !important;
+}
+
+.masthead-subheading {
+    font-size: 3rem !important;
+}
+
+.btn-primary {
+	background-color: #dd4800 !important;
+	border-color: #dd4800 !important;
+	color: white !important;
+}
+
+.btn-primary:hover {
+	background-color: #7b0000 !important;
+	border-color: #7b0000 !important;
+}
+
+.footer-link {
+	color: white !important;
+	text-decoration: none !important;
+}
+
+.footer-link:hover {
+	color: white !important;
+	text-decoration: underline !important;
+}
