@@ -1,0 +1,22 @@
+{
+  "name": "wooten-site",
+  "version": "0.0.1",
+  "description": "The main website of John F. Wooten and his products.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjburkey01/wooten-site.git"
+  },
+  "author": "CJ Burkey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cjburkey01/wooten-site/issues"
+  },
+  "homepage": "https://github.com/cjburkey01/wooten-site#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {}
+}
