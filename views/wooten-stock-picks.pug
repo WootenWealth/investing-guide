@@ -12,12 +12,13 @@ html(lang='en')
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900')/
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i')/
     link(rel='stylesheet' href='/static/wooten-stock-picks/style/stylea.css')/
+    link(rel='stylesheet' href='/static/style/base.css')/
     link(rel='stylesheet' href='/static/wooten-stock-picks/style/styleb.css')/
-    title Wooten Stock Picks
+    title Wooten Stock Picks &verbar; John Wooten
+
   body
-    nav.navbar.navbar-expand-lg.navbar-dark.navbar-custom.fixed-top
-      .container
-        a.navbar-brand(href='#') Wooten Stock Picks
+    include base/navbar.pug
+
     header.masthead.text-center.text-white
       .masthead-content
         .container
@@ -141,7 +142,7 @@ html(lang='en')
               h2.display-4 Happy Trading!
               p
                 img(alt='John Wooten&apos;s Signature' src='/static/wooten-stock-picks/img/sig.png')/
-    .py-5.bg-black
+    footer.footer.py-5.bg-black.mt-auto
       .container
         p.m-0.text-center.text-white.small &copy; #{(new Date()).getFullYear()} Wooten Stock Picks
         p.m-0.text-center.text-white.small

@@ -62,3 +62,6 @@ typings/
 
 # Specific module versions
 package-lock.json
+
+# Output
+output

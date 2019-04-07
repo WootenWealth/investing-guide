@@ -11,11 +11,14 @@ html.h-100(lang='en')
     meta(name='keywords' content='ninetonoon, nine, to, noon, secret, workday, verywealthy, uberwealthy, uber, wealthy, rich, money, cash, America, American, banks, stocks, prices')/
     meta(name='author' content='John F. Wooten')/
     link(rel='stylesheet' href='/static/style/yeti.min.css')/
+    link(rel='stylesheet' href='/static/style/base.css')/
     link(rel='stylesheet' href='/static/nine-to-noon/style/style.css')/
     title Nine to Noon &verbar; John Wooten
 
   body.d-flex.flex-column.h-100
-    main.flex-shrink-0
+    include base/navbar.pug
+
+    main.flex-shrink-0(style='margin-top: 5rem;')
       .container.page-container.px-5.py-3
         .row
           .col-12.col-md-9
@@ -69,7 +72,7 @@ html.h-100(lang='en')
       .container.page-container.px-5.py-3.mt-4
         .row.mt-3
           .col-12
-            h2.text-center.mb-3 Underlying Principles
+            h2.text-center.mb-3.font-weight-bold Underlying Principles
             .align-items-center.d-flex.row
               .col-12.col-sm-7
                 p This book starts by going through the workday that so few truly master, the workday that opens the floodgates holding back unimaginable opportunities. Then, you will learn about the basic techniques and tougher technicals behind long-term investing. Assuming you are a novice student in the markets, you will learn about different account types and principles for building and managing your assets.
@@ -82,10 +85,34 @@ html.h-100(lang='en')
                 img.img-fluid(src='/static/nine-to-noon/img/graph_02.png' alt='Inflation overview and market performance')/
               .col-12.col-sm-6
                 p Understandable and immediately applicable financial viewpoints, trading principles, and strategy explanations based on 2+ years of trading and investing
+      .container.page-container.px-5.py-3.mt-4
+        .row.mt-3
+          .col-12
+            h2.text-center.mb-3.font-weight-bold Part Two
+            .align-items-center.d-flex.row
+              .col-12.col-sm-7
+                p In Part Two, you will dive into patterns, setups, indicators, and everything else you can use to master active trading and strengthen your long-term trading by identifying and profiting from repetitive, high-probability profit strategies.
+                p These are the absolute best strategies, indicators, and setups that I have refined and worked with successfully through my investing career. They have served me well in day trading, long-term investing, and swing trading. You can build your portfolio today no matter your time commitment by simply understanding and applying the principles in the book. See Chapters 1 through 4 about different trading styles and how to best utilize your time.
+                blockquote.blockquote
+                  p.mb-0 &quot;By the end of this book, you will ask yourself why you ever thought of hiring a financial advisor when the stock market makes so much sense to you!&quot;
+                  footer.blockquote-footer John Wooten, the Preface
+              .col-12.col-sm-5
+                img.img-fluid(src='/static/nine-to-noon/img/wooten-01.jpg' alt='Wooten')/
+      .container.page-container.px-5.py-3.mt-4
+        .row.mt-3
+          .col-12
+            h2.text-center.mb-3.font-weight-bold Get the Book!
+            .align-items-center.d-flex.row
+              .col-12.col-sm-5
+                img.img-fluid(src='/static/nine-to-noon/img/wooten-02.jpg' alt='Wooten')/
+              .col-12.col-sm-7
+                p 100% refund guarantee even with free Prime shipping. Don&apos;t like the color of the packaging? Send it back no questions asked. Nine to Noon is an investment that will build your financial future, not hinder it.
+                p.mb-4 Read the whole book. If you do not immediately find financial clarity and direction in your life, send it back for a full refund within 30 days. That&apos;s my guarantee.
+                h4.mb-4.font-weight-bold #[span(style='color: #c87e30;') Look] #[span(style='color: #3a74d2;') inside] and grow:
+                a(href='https://www.amazon.com/Nine-Noon-Workday-Uber-Wealthy-Americans/dp/1794566856')
+                  img.img-fluid(src='/static/nine-to-noon/img/available_at_amazon.png' alt='View the book on Amazon')/
 
-    footer.footer.mt-auto.py-3
-      .container
-        span.text-muted &copy; #{(new Date()).getFullYear()} John Wooten
+    include base/footer.pug
 
     script(src='/static/js/jquery-3.3.1.slim.min.js')
     script(src='/static/js/popper.min.js')

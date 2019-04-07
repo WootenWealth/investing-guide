@@ -1,0 +1,38 @@
+doctype html
+
+include comment.pug
+
+html.h-100(lang='en')
+  head
+    meta(charset='utf-8')/
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')/
+    meta(name='application-name' content='John F. Wooten')/
+    meta(name='description' content='The official website landing page of John Wooten')/
+    meta(name='keywords' content='ninetonoon, nine, to, noon, secret, workday, verywealthy, uberwealthy, uber, wealthy, rich, money, cash, America, American, banks, stocks, prices')/
+    meta(name='author' content='John F. Wooten')/
+    link(rel='stylesheet' href='/static/style/yeti.min.css')/
+    link(rel='stylesheet' href='/static/style/base.css')/
+    link(rel='stylesheet' href='/static/nine-to-noon/style/style.css')/
+    title John Wooten
+  
+  body.d-flex.flex-column.h-100
+    include base/navbar.pug
+    
+    main.flex-shrink-0(style='margin-top: 5rem;')
+      .container.page-container.px-5.py-3
+        .row.mt-3.pb-3
+          .col-12
+            h2.text-center.mb-3.font-weight-bold About John Wooten
+            .align-items-center.d-flex.row
+              .col-12.col-sm-5
+                img.img-fluid(src='/static/nine-to-noon/img/wooten-02.jpg' alt='Wooten')/
+              .col-12.col-sm-7
+                p John started learning about our economy on his own a few months before he left his year-long job at Subway in sophomore year of high school. Inspired by his research, John started investing in stocks after school. Once summer came along, John started trading #[a(href='/nine-to-noon/') nine-to-noon] every weekday, making much more in his first few weeks than he ever thought possible. As junior year started, John transitioned into mining and swing trading cryptocurrencies on constantly volatile twenty-four-hour exchanges. Cryptocurrencies fueled John's passion for trading in financial markets and showed him a new path for wealth management. This strengthened his drive to bring the power of financial markets to more Americans which he immediately acted on by teaching stock classes at his high school for six weeks. Alongside writing and asset management, John currently operates MonerAds, aiming to change the face of online advertising. Learn more and meet me #[a(href='https://www.youtube.com/watch?v=W6u-PNxPy9c&feature=youtu.be' target='_blank') here].
+    
+    include base/footer.pug
+    
+    script(src='/static/js/jquery-3.3.1.slim.min.js')
+    script(src='/static/js/popper.min.js')
+    script(src='/static/js/bootstrap.min.js')
+
+//The end :)
